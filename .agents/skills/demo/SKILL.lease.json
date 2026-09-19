@@ -1,0 +1,19 @@
+{
+  "skill": "SKILL.md",
+  "python": "python3",
+  "version": 1,
+  "bindings": [
+    {
+      "fragment": "f01",
+      "sha256": "6d672131aff3f76c",
+      "reason": "entrypoint greeting",
+      "checks": [
+        {
+          "type": "predicate",
+          "expr": "__import__('pathlib').Path('main.py').read_text().count('Hello from skilllease-demo!') == 1",
+          "expect": true
+        }
+      ]
+    }
+  ]
+}

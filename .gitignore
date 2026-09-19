@@ -210,7 +210,9 @@ CLAUDE.md
 WARP.md
 .cursor
 .claude
-.agents
+.agents/*
+!.agents/skills/
+!.agents/skills/**
 .agent
 .zcode/
 scratchpad/
